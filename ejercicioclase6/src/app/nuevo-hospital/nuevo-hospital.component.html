@@ -1,0 +1,13 @@
+<h1>Nuevo Hospital</h1>
+<form [formGroup]="formHospital" (ngSubmit)="ngOnSubmit()">
+    <label>
+        Id:
+        <input type="text" formControlName="id">
+    </label>
+    <label>
+        Nombre:
+        <input type="text" formControlName="nombre">
+    </label>
+    <br><br>
+    <input type="submit" value="guardar">
+</form>

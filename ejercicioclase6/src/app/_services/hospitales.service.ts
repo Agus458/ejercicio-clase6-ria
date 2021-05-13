@@ -21,4 +21,14 @@ export class HospitalesService {
     return result;
   }
 
+  public addHospital(newHospital: Hospital): Observable<Hospital> {
+    const result = new Observable<Hospital>(observer => {
+      setTimeout(() => {
+        this.hospitales.push(newHospital);
+        observer.next(newHospital);
+      }, 1000);
+    });
+    return result;
+  }
+
 }

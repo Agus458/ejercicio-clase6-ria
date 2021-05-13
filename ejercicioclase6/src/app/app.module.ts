@@ -5,15 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HospitalesService } from './_services/hospitales.service';
 import { ListaHospitalesComponent } from './lista-hospitales/lista-hospitales.component';
+import { NuevoHospitalComponent } from './nuevo-hospital/nuevo-hospital.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaHospitalesComponent
+    ListaHospitalesComponent,
+    NuevoHospitalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [HospitalesService],
   bootstrap: [AppComponent]
